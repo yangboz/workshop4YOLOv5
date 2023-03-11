@@ -159,7 +159,9 @@ assets/AID50/100.zip
 
 
 ## training
-
+```
+PYTORCH_ENABLE_MPS_FALLBACK=1 python yolov5/train.py --weights=./yolov5n6.pt --data=./dataset4mvacvs.yaml --batch 16 --epoch 20 --imgsz 640 --device mps
+```
 ## know issues
 
 https://github.com/Lightning-AI/lightning/issues/13251
